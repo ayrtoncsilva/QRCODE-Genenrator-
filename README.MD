@@ -30,8 +30,6 @@ A regra de negócio não depende da implementação de armazenamento.
 ## 📂 Estrutura do Projeto
 
 ````bash
-src/main/java/com/ayrtoncsilva/qrcode/generator
-│
 ├── controller/
 │   └── QrCodeController.java
 │
