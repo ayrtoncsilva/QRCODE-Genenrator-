@@ -50,7 +50,6 @@ src/main/java/com/ayrtoncsilva/qrcode/generator
 │
 └── Application.java
 
-
 ---
 
 ## 🔎 Responsabilidades
