@@ -29,28 +29,30 @@ A regra de negócio não depende da implementação de armazenamento.
 
 ## 📂 Estrutura do Projeto
 
+````text
 src/main/java/com/ayrtoncsilva/qrcode/generator
-
+│
 ├── controller/
-│ └── QrCodeController.java
+│   └── QrCodeController.java
 │
 ├── dto/
-│ ├── QrCodeGenerateRequest.java
-│ └── QrCodeGenerateResponse.java
+│   ├── QrCodeGenerateRequest.java
+│   └── QrCodeGenerateResponse.java
 │
 ├── service/
-│ └── QrCodeGeneratorService.java
+│   └── QrCodeGeneratorService.java
 │
 ├── ports/
-│ └── StoragePort.java
+│   └── StoragePort.java
 │
 ├── infrastructure/
-│ ├── LocalStorageAdapter.java
-│ └── S3StorageAdapter.java
+│   ├── LocalStorageAdapter.java
+│   └── S3StorageAdapter.java
 │
 └── Application.java
 
 ---
+
 
 ## 🔎 Responsabilidades
 
@@ -75,11 +77,11 @@ Implementações concretas do armazenamento:
 
 ## 💡 Decisões Arquiteturais
 
-✔ Separação clara entre domínio e infraestrutura  
-✔ Inversão de dependência  
-✔ Código preparado para extensão (Open/Closed Principle)  
-✔ Facilidade para adicionar novos provedores de storage  
-✔ Projeto pronto para ambientes cloud  
+✔ Separação clara entre domínio e infraestrutura
+✔ Inversão de dependência
+✔ Código preparado para extensão (Open/Closed Principle)
+✔ Facilidade para adicionar novos provedores de storage
+✔ Projeto pronto para ambientes cloud
 
 ---
 
@@ -105,3 +107,4 @@ Implementações concretas do armazenamento:
   "width": 300,
   "height": 300
 }
+````
